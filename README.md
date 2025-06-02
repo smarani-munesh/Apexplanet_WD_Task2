@@ -1,2 +1,41 @@
-# Apexplanet_WD_Task2
-A responsive To-Do List web app with:  ⏰ Task time &amp; reminders  ☑️ Completion tracking with strikethrough  🌗 Dark/Light theme toggle  💾 localStorage support  📩 Toggleable Contact Form with JS validation  📱 Responsive layout using Flexbox &amp; Grid  Built using HTML, CSS, and JavaScript.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TO-DO List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 To-Do List</h1>
+    <button id="toggleThemeBtn">🌗 Toggle Theme</button>
+  </header>
+
+  <main>
+    <div class="todo-container">
+      <input type="text" id="taskInput" placeholder="🎯 Enter a task" />
+      <input type="time" id="taskTime" />
+      <button onclick="addTask()">➕ Add Task</button>
+      <ul id="taskList"></ul>
+      <button id="toggleContactBtn">📩 Contact Us for Details</button>
+    </div>
+
+    <div id="contactForm" class="contact-form hidden">
+      <h2>📞 Contact Form</h2>
+      <form id="form">
+        <input type="text" placeholder="👤 Full Name" required />
+        <input type="email" placeholder="📧 Email" required />
+        <textarea placeholder="💬 Your message..."></textarea>
+        <button type="submit">📨 Send</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>🎨 Designed with 💖 | &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
